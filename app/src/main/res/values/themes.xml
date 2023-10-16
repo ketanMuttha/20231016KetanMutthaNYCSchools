@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.NYCSchools" parent="android:Theme.Material.Light.NoActionBar"/>
+
+    <style name="Theme.App.Launch" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/nyc_schools_splash_background</item>
+        <item name ="windowSplashScreenAnimatedIcon">@drawable/ic_nyc_schools_splash</item>
+        <item name="postSplashScreenTheme">@style/Theme.NYCSchools</item>
+     </style>
+</resources>
