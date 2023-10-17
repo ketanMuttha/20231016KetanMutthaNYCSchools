@@ -1,5 +1,6 @@
 package com.nyc.schools.presentation.di
 
+import com.nyc.schools.BuildConfig
 import com.nyc.schools.constant.ApiConstant
 import com.nyc.schools.data.remote.NycSchoolsAPI
 import dagger.Module
@@ -17,7 +18,7 @@ object AppModule {
     @Singleton
     @Provides
     fun providesRetrofit(): Retrofit{
-        return Retrofit.Builder().baseUrl(ApiConstant.BASE_URL)
+        return Retrofit.Builder().baseUrl(BuildConfig.NYCSchools_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
